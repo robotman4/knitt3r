@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:knitt3r/database_helper.dart';
 import 'dart:math' as math;
-import 'package:sqflite/sqflite.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,6 +22,8 @@ class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
   final String title;
+
+  final dbHelper = DatabaseHelper.instance;
 
   @override
   _MyHomePageState createState() => _MyHomePageState();

@@ -283,6 +283,9 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                           child: Text(dataCounterName[index],
                               style:
                                   TextStyle(color: Colors.white, fontSize: 15)),
+                          onPressed: (){
+
+                          },
                           onLongPress: () {
                             _changeCounterName(index);
                           },
@@ -291,6 +294,9 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                           child: Text(dataCounters[index].toString(),
                               style:
                                   TextStyle(color: Colors.white, fontSize: 40)),
+                          onPressed: (){
+
+                          },
                           onLongPress: () {
                             _resetCounter(index);
                           },

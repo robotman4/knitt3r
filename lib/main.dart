@@ -193,7 +193,6 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     Color backgroundColor = Theme.of(context).cardColor;
-    Color foregroundColor = Theme.of(context).accentColor;
     return Scaffold(
       backgroundColor: const Color(0xFF424242),
       appBar: PreferredSize(

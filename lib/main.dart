@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
+import 'package:knitt3r/services/db.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await DB.init();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override

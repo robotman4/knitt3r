@@ -183,6 +183,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
   ];
 
   @override
+  // ignore: must_call_super
   void initState() {
     _controller = AnimationController(
       vsync: this,

@@ -163,7 +163,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
         {
           print("App information");
           print('Number of Counters: ${dataCounters.length}');
-          print('Counter names: ${dataCounterName}');
+          print('Counter names: $dataCounterName');
         }
         break;
       default:

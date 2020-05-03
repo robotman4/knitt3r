@@ -34,6 +34,9 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
+
+  final table = 'counter_items';
+
   var dataCounters = [0, 0, 0, 0];
   var dataCounterName = ['Counter 0', 'Counter 1', 'Counter 2', 'Counter 3'];
   var dataColors = [
@@ -171,6 +174,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
           print("App information");
           print('Number of Counters: ${dataCounters.length}');
           print('Counter names: $dataCounterName');
+          print(DB.query(table));
         }
         break;
       default:

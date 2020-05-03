@@ -14,7 +14,7 @@ class CounterItem extends Model {
 
     Map<String, dynamic> map = {
       'name': name,
-      'value': 0
+      'counts': 0
     };
 
     if (id != null) { map['id'] = id; }
@@ -26,7 +26,7 @@ class CounterItem extends Model {
     return CounterItem(
         id: map['id'],
         name: map['name'],
-        counts: map['value']
+        counts: map['counts']
     );
   }
 }

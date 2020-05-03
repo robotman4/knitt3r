@@ -6,9 +6,9 @@ class CounterItem extends Model {
 
   int id;
   String name;
-  int value;
+  int counts;
 
-  CounterItem({ this.id, this.name, this.value });
+  CounterItem({ this.id, this.name, this.counts });
 
   Map<String, dynamic> toMap() {
 
@@ -26,7 +26,7 @@ class CounterItem extends Model {
     return CounterItem(
         id: map['id'],
         name: map['name'],
-        value: map['value']
+        counts: map['value']
     );
   }
 }
